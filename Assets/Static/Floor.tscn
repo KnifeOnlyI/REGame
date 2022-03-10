@@ -1,9 +1,10 @@
-[gd_scene format=2]
+[gd_scene load_steps=2 format=2]
 
-[node name="Floor" type="Spatial"]
+[ext_resource path="res://Materials/Developer/Developer.tres" type="Material" id=1]
 
-[node name="CSGBox" type="CSGBox" parent="."]
+[node name="Floor" type="CSGBox"]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0045648, 0 )
 width = 20.0
 height = 0.01
 depth = 20.0
+material = ExtResource( 1 )

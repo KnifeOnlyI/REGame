@@ -8,11 +8,25 @@
 
 config_version=4
 
+_global_script_classes=[ {
+"base": "Reference",
+"class": "ArrayUtils",
+"language": "GDScript",
+"path": "res://Addons/SIsilicon.3d.text/array_utils.gd"
+} ]
+_global_script_class_icons={
+"ArrayUtils": ""
+}
+
 [application]
 
 config/name="Re Game"
 run/main_scene="res://Levels/MainLevel.tscn"
 config/icon="res://icon.png"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/SIsilicon.3d.text/plugin.cfg" )
 
 [input]
 
@@ -41,6 +55,11 @@ run={
 "events": [ Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":1,"pressure":0.0,"pressed":false,"script":null)
  ]
 }
+action={
+"deadzone": 0.5,
+"events": [ Object(InputEventJoypadButton,"resource_local_to_scene":false,"resource_name":"","device":0,"button_index":0,"pressure":0.0,"pressed":false,"script":null)
+ ]
+}
 
 [physics]
 
@@ -48,4 +67,6 @@ common/enable_pause_aware_picking=true
 
 [rendering]
 
+quality/filters/anisotropic_filter_level=16
+quality/filters/msaa=4
 environment/default_environment="res://default_env.tres"

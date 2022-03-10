@@ -6,4 +6,7 @@
     <ItemGroup>
         <Content Include=".gitignore"/>
     </ItemGroup>
+    <ItemGroup>
+        <Folder Include="Levels"/>
+    </ItemGroup>
 </Project>
